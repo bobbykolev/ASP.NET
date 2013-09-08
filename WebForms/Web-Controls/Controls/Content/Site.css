@@ -1,0 +1,15 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+input[type="number"], input[type="text"]
+{
+    margin-bottom: 0;
+}
+table, td
+{
+    border-collapse:collapse;
+    padding:0;
+    margin:0;
+}

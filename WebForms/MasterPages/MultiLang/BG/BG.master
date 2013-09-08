@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BG.master.cs" Inherits="MultiLang.BG.BG" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderHeader" runat="server">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="brand" runat="server" href="~/BG/index">Мастър Пейджис</a>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a runat="server" href="~/BG/index">Начало</a></li>
+                        <li><a runat="server" href="~/BG/za-nas">За Нас</a></li>
+                        <li><a runat="server" href="~/BG/kontakti">Контакти</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="BgContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBgContent" runat="server" />
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderFooter" runat="server">
+    <p>&copy; <%: DateTime.Now.Year %> - "Мастър Пейджис"</p>
+</asp:Content>
